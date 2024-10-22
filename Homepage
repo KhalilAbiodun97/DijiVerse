@@ -3,19 +3,19 @@ import React from 'react';
 function App() {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Header with Dijiverse logo and slogan */}
-      <header className="bg-white shadow py-6 px-4 flex justify-end" style={{ backgroundColor: '#ede3cc' }}>
-        <div className="text-right">
-          <h1 className="text-4xl font-bold text-black">Welcome to Dijiverse</h1>
-          <p className="text-lg text-gray-600">Building websites for startups and small businesses</p>
+      {/* Header with Dijiverse logo and slogan in white border, aligned to the right */}
+      <header className="py-6 px-4 flex justify-end" style={{ backgroundColor: '#ede3cc' }}>
+        <div className="bg-black p-8 shadow-lg rounded-lg max-w-lg text-right">
+          <h1 className="text-4xl font-bold text-white">Welcome to Dijiverse!</h1>
+          <p className="text-lg text-white">Crafting Digital Worlds, One Click At a Time.</p>
         </div>
       </header>
 
       {/* Main Section with beige background and white border around "Explore Web Design" */}
       <section className="py-20 text-center" style={{ backgroundColor: '#ede3cc' }}>
-        <div className="bg-white p-8 shadow-lg rounded-lg mx-auto max-w-lg">
-          <h2 className="text-3xl font-bold text-gray-800">Explore Web Design</h2>
-          <p className="mt-4 text-gray-600">We offer web design services tailored to your business needs.</p>
+        <div className="bg-black p-8 shadow-lg rounded-lg mx-auto max-w-lg">
+          <h2 className="text-3xl font-bold text-white">Explore Web Design</h2>
+          <p className="mt-4 text-white">We offer web design services tailored to your business needs.</p>
         </div>
       </section>
 
@@ -23,19 +23,19 @@ function App() {
       <section className="py-16 text-center" style={{ backgroundColor: '#ede3cc' }}>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Template Service */}
-          <div className="bg-white p-8 shadow-lg rounded-lg">
-            <h2 className="text-2xl font-semibold text-black">Purchase a Template</h2>
-            <p className="mt-4 text-gray-600">Choose from pre-designed templates that are customizable to your business.</p>
-            <button className="mt-6 px-8 py-3 bg-blue-500 text-black font-semibold rounded-lg hover:bg-blue-600 transition duration-300">
+          <div className="bg-black p-8 shadow-lg rounded-lg">
+            <h2 className="text-2xl font-semibold text-white">Purchase a Template</h2>
+            <p className="mt-4 text-white">Choose from pre-designed templates that are customizable to your business.</p>
+            <button className="mt-6 px-8 py-3 text-black font-semibold rounded-lg hover:bg-red-600 transition duration-300" style={{ backgroundColor: '#ff3131' }}>
               View Templates
             </button>
           </div>
 
           {/* Landing Page Service */}
-          <div className="bg-white p-8 shadow-lg rounded-lg">
-            <h2 className="text-2xl font-semibold text-black">Landing Page</h2>
-            <p className="mt-4 text-gray-600">Get a custom-designed landing page for your business or product.</p>
-            <button className="mt-6 px-8 py-3 bg-blue-500 text-black font-semibold rounded-lg hover:bg-blue-600 transition duration-300">
+          <div className="bg-black p-8 shadow-lg rounded-lg">
+            <h2 className="text-2xl font-semibold text-white">Landing Page</h2>
+            <p className="mt-4 text-white">Get a custom-designed landing page for your business or product.</p>
+            <button className="mt-6 px-8 py-3 text-black font-semibold rounded-lg hover:bg-red-600 transition duration-300" style={{ backgroundColor: '#ff3131' }}>
               Order Landing Page
             </button>
           </div>
