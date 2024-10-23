@@ -1,0 +1,57 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import NailPage from './NailPage';
+import LashPage from './LashPage';
+import TemplatesPage from './TemplatesPage';
+import Logo from './assets/diji-alone.png';
+
+function App() {
+  return (
+    <Router>
+      <div className="min-h-screen bg-gray-100">
+        {/* Define Routes for Each Page */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/templates" element={<TemplatesPage />} />
+          <Route path="/nail-page" element={<NailPage />} />
+          <Route path="/lash-page" element={<LashPage />} />
+        </Routes>
+
+        {/* Footer */}
+        <footer className="bg-black text-white py-6 text-center">
+          <p>&copy; 2024 Dijiverse. All rights reserved.</p>
+        </footer>
+      </div>
+    </Router>
+  );
+}
+
+const Home = () => (
+  <>
+    <header className="py-6 px-4 flex justify-between items-center" style={{ backgroundColor: '#ede3cc' }}>
+      {/* Logo in the top-left corner */}
+      <img src={Logo} alt="Dijiverse Logo" className="h-15 w-auto" />
+      
+      {/* Welcome to Dijiverse section on the right */}
+      <div className="bg-black p-8 shadow-lg rounded-lg max-w-lg text-right">
+        <h1 className="text-4xl font-bold text-white">Welcome to Dijiverse!</h1>
+        <p className="text-lg text-white">Crafting Digital Worlds, One Click At a Time.</p>
+      </div>
+    </header>
+
+    {/* Main Section with Explore Web Design */}
+    <section className="py-20 text-center" style={{ backgroundColor: '#ede3cc' }}>
+      <div className="bg-black p-8 shadow-lg rounded-lg mx-auto max-w-lg">
+        <h2 className="text-3xl font-bold text-white">Explore Web Design</h2>
+        <p className="mt-4 text-white">We offer web design services tailored to your business needs.</p>
+        <Link to="/templates">
+          <button className="mt-6 px-8 py-3 bg-red-500 text-black font-semibold rounded-lg hover:bg-red-600 transition duration-300">
+            View Templates
+          </button>
+        </Link>
+      </div>
+    </section>
+  </>
+);
+
+export default App;
