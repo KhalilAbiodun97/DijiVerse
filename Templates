@@ -1,0 +1,54 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Logo from './assets/diji-alone.png'; // Ensure the logo path is correct
+
+function TemplatesPage() {
+  return (
+    <div className="min-h-screen bg-gray-100">
+      {/* Header with Dijiverse logo and slogan */}
+      <header className="py-6 px-4 flex justify-between items-center" style={{ backgroundColor: '#ede3cc' }}>
+        {/* Logo in the top-left corner */}
+        <img src={Logo} alt="Dijiverse Logo" className="h-15 w-auto" />
+
+        {/* Welcome to Dijiverse section */}
+        <div className="bg-black p-8 shadow-lg rounded-lg max-w-lg text-right">
+          <h1 className="text-4xl font-bold text-white">Welcome to Dijiverse!</h1>
+          <p className="text-lg text-white">Crafting Digital Worlds, One Click At a Time.</p>
+        </div>
+      </header>
+
+      {/* Templates Section */}
+      <section className="py-16 text-center" style={{ backgroundColor: '#ede3cc', color: 'white' }}>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Nail Page Template */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold text-black">Nail Page Template</h2>
+              <p className="mt-4 text-gray-600">Preview our beautiful nail salon website template.</p>
+              <Link
+                to="/nail-page"
+                className="mt-6 inline-block px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800"
+              >
+                View Nail Page Template
+              </Link>
+            </div>
+
+            {/* Lash Page Template */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold text-black">Lash Page Template</h2>
+              <p className="mt-4 text-gray-600">Preview our stylish lash service website template.</p>
+              <Link
+                to="/lash-page"
+                className="mt-6 inline-block px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800"
+              >
+                View Lash Page Template
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default TemplatesPage;
