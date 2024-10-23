@@ -1,0 +1,63 @@
+import React from 'react';
+import PlaceholderImage from './assets/placeholder-image.png'; // Ensure this path is correct
+
+function LashPage() {
+  return (
+    <div className="min-h-screen" style={{ backgroundColor: '#C74375' }}>
+      <header className="bg-white py-6 px-4 flex justify-center shadow-lg">
+        <h1 className="text-5xl font-bold text-white">DijiLashes</h1>
+      </header>
+
+      {/* Gallery Section */}
+      <section className="py-12 text-center" style={{ backgroundColor: '#C74375', color: 'white' }}>
+        <h2 className="text-3xl font-bold">Our Lash Gallery</h2>
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white p-6 shadow-md rounded-lg">
+            <img src="https://via.placeholder.com/100" alt="Lash Design 1" className="w-24 h-24 rounded-lg"/>
+          </div>
+          <div className="bg-white p-6 shadow-md rounded-lg">
+            <img src="https://via.placeholder.com/100" alt="Lash Design 2" className="w-24 h-24 rounded-lg"/>
+          </div>
+          <div className="bg-white p-6 shadow-md rounded-lg">
+            <img src="https://via.placeholder.com/100" alt="Lash Design 3" className="w-24 h-24 rounded-lg"/>
+          </div>
+        </div>
+      </section>
+
+      {/* Booking Section */}
+      <section className="py-16 text-center" style={{ backgroundColor: '#C74375', color: 'white' }}>
+        <h2 className="text-3xl font-bold">Book Your Appointment</h2>
+        <img
+          src={PlaceholderImage}
+          alt="Booking Section Preview"
+          className="mt-8 w-full h-auto rounded-lg"
+        />
+      </section>
+
+      {/* Side-by-Side Boxes with Fuchsia Rose Borders */}
+      <section className="py-8 text-center" style={{ backgroundColor: '#C74375', color: 'white' }}>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="p-4 bg-white text-black rounded-lg shadow-lg border-4" style={{ borderColor: '#C74375' }}>
+            <h3 className="text-xl font-semibold mb-2">Booking System Integration</h3>
+            <p className="text-md font-semibold">
+              ⭐ We will integrate your preferred booking system directly into your website. Choose from platforms such as <strong>Calendly</strong>, <strong>Setmore</strong>, or <strong>Acuity Scheduling</strong> for a seamless booking experience. ⭐
+            </p>
+          </div>
+          <div className="p-4 bg-white text-black rounded-lg shadow-lg border-4" style={{ borderColor: '#C74375' }}>
+            <h3 className="text-xl font-semibold mb-2">Customization Available</h3>
+            <p className="text-md font-semibold">
+              ✨ Looking for something unique? We offer complete customization options to make your website truly yours. From personalized designs to tailored functionalities, we can help bring your vision to life. ✨
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-6 text-center" style={{ backgroundColor: '#C74375', color: 'white' }}>
+        <p>&copy; 2024 DijiLashes. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default LashPage;
